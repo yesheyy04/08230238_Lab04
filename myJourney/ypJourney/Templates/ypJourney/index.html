@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: seashell;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        nav {
+            background-color: #E0FFFF;
+            padding: 15px;
+            text-align: right;
+        }
+        nav a {
+            color: black;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #FFB6C1;
+        }
+        .content {
+            width: 70%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'index' %}">Learning Journey</a>
+    <a href="{% url 'about' %}">About Me</a>
+</nav>
+
+<div class="content">
+    <h1>My Learning Journey in Web Development</h1>
+    <p>
+        My learning journey started with the basics of programming in Python. 
+        Over time, I explored how Python can be used to build real-world applications. 
+        When I learned about web development, I discovered Django, a Python framework that makes creating websites faster and easier.
+    </p>
+    <p>
+        In this project, I have been learning how to:
+        <ul>
+            <li>Create a Django project and apps</li>
+            <li>Use the Model-View-Template (MVT) architecture</li>
+            <li>Design HTML templates for web pages</li>
+            <li>Connect URLs and views to render dynamic content</li>
+            <li>Use Django's admin interface to manage data</li>
+        </ul>
+    </p>
+    <p>
+        This hands-on experience has helped me understand how web applications work behind the scenes 
+        and how front-end and back-end components interact.
+    </p>
+    <!-- You can add images or screenshots here -->
+</div>
+
+</body>
+</html>

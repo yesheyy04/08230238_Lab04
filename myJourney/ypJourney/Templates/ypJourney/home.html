@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - My Learning Journey</title>
+    <!-- Sweet font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: seashell;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        nav {
+            background-color: #E0FFFF; /* light cyan */
+            padding: 15px;
+            text-align: right;
+        }
+        nav a {
+            color: black;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #FFB6C1; /* sweet pink on hover */
+        }
+
+        /* Center box */
+        .center-box {
+            background-color: white;
+            border-radius: 15px;
+            width: 50%;
+            margin: 100px auto;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'index' %}">Learning Journey</a>
+    <a href="{% url 'about' %}">About Me</a>
+</nav>
+
+<div class="center-box">
+    <h1>Welcome to My Journey</h1>
+    <p>This website showcases my learning journey in Python Django.</p>
+</div>
+
+</body>
+</html>
